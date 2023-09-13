@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
 * {
   box-sizing: border-box;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -8,7 +10,18 @@ body {
   display: flex;
 }
 
+h2 {
+  width: 48ch;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+}
+
 .hero-image {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   width: 33vw;
   background-image: url(mountains.jpg);
@@ -16,15 +29,58 @@ body {
   background-position: 55%;
 }
 
+.hero-image > p {
+  color: white;  
+  font-size: .7rem;
+  align-self: center;
+  position: relative;
+  top: 70%;
+}
+
+.hero-image > p > a {
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 50%);
+  padding: 1rem;
+  position: relative;
+  top: 22%;
+}
+
+.logo > img {
+  height: 8rem;
+}
+
+.logo > h1 {
+  color: white;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
 .form-body {
   display: flex;
   flex-direction: column;
-  max-width: 66vw;
+  width: 66vw;
+}
+
+.form-container {
+  border-bottom: 3px solid #1f2b5e;
   padding: 2rem;
+}
+
+form {
+  width: 66%;
 }
 
 .form-row {
   display: flex;
+  flex: 1;
   justify-content: space-between;
 }
 
@@ -44,5 +100,4 @@ body {
 input {
   height: 2rem;
   border-radius: 7px;
-  width: 38vb;
 }
