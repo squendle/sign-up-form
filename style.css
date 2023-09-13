@@ -7,11 +7,18 @@
 
 body {
   margin: 0;
+  padding: 0;
   display: flex;
 }
 
 h2 {
   width: 48ch;
+  font-weight: 500;
+}
+
+span.lighthouse {
+  font-family: 'Libre Baskerville', serif;
+  color: #1f2b5e;
 }
 
 section {
@@ -23,7 +30,7 @@ section {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 33vw;
+  width: 33%;
   background-image: url(mountains.jpg);
   background-size: cover;
   background-position: 55%;
@@ -48,10 +55,11 @@ section {
   padding: 1rem;
   position: relative;
   top: 22%;
+  gap: 4%;
 }
 
 .logo > img {
-  height: 8rem;
+  height: 6rem;
 }
 
 .logo > h1 {
@@ -66,38 +74,77 @@ section {
 .form-body {
   display: flex;
   flex-direction: column;
-  width: 66vw;
+  width: 67%;
 }
 
 .form-container {
-  border-bottom: 3px solid #1f2b5e;
   padding: 2rem;
 }
 
 form {
-  width: 66%;
+  width: 67%;
 }
 
 .form-row {
   display: flex;
-  flex: 1;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .form-row > p {
   display: flex;
   flex-direction: column;
+  flex: none;
   align-items: flex-start;
   font-size: .7rem;
   font-weight: 800;
   letter-spacing: .5ch;
+  min-width: 45%;
 }
 
 .form-row > p > label {
   padding: .3rem;
 }
 
-input {
+label span {
+  color: red;
+  font-size: 1rem;
+}
+
+.form-row > p > input {
   height: 2rem;
   border-radius: 7px;
+  width: 100%;
+  border: 1px solid #061522;
+}
+
+.submission {
+  padding: 2rem;
+  box-shadow: inset 0px 10px 10px -10px black;
+}
+
+.submission > p > a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #1f2b5e;
+}
+
+button {
+  padding: 1rem;
+  font-family: inherit;
+  font-size: 1.5rem;
+  background-color: #656c9f;
+  border-radius: 7px;
+  box-shadow: none;
+  border: 1px solid #061522;
+  color: white;
+}
+
+button:hover {
+  background-color: #1f2b5e;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #061522;
 }
