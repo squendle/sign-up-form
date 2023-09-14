@@ -115,8 +115,24 @@ label span {
   height: 2rem;
   border-radius: 7px;
   width: 100%;
-  border: 1px solid #061522;
+  border: 1px solid #656c9f;
+  outline: none;
 }
+
+.form-row > p > input:focus {
+  outline: 2px solid #656c9f;
+}
+
+.form-row > p > input[type="password"]:invalid {
+  outline: 2px solid red;
+  border: 1px solid red;
+}
+
+.form-row > p > input[type="password"]:valid {
+  outline: 2px solid #17C28C;
+  border: 1px solid #17C28C;
+} 
+
 
 .submission {
   padding: 2rem;
